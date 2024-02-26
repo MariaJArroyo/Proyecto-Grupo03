@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package eedd.proyectofinal;
 
-/**
- *
- * @author SaidL
- */
+
 public class Residuo {
     private String nombreResiduo;
     private String tipoResiduo;
@@ -32,8 +26,11 @@ public class Residuo {
     public void setTipoResiduo(String tipoResiduo) {
         this.tipoResiduo = tipoResiduo;
     }
-    
-    public String impriprimirResiduo(){
-      return "Residuo:" + this.nombreResiduo + " Tipo: " + this.tipoResiduo;   
+
+    @Override
+    public String toString() {
+        return "[residuo: "+this.nombreResiduo+" y tipo de residuo: "+this.tipoResiduo+"]";
     }
+    
+    
 }

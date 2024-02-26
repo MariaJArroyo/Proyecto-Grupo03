@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package eedd.proyectofinal;
 
-/**
- *
- * @author SaidL
- */
 public class NodoP {
     private Residuo elemento;
     private NodoP siguiente;
@@ -32,8 +25,9 @@ public class NodoP {
         this.siguiente = siguiente;
     }
     
-    public String mostrarElemento(){
-        return elemento.impriprimirResiduo();
+    @Override
+    public String toString() {
+        return this.elemento.toString();
     }
     
     
